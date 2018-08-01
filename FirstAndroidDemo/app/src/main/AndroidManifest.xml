@@ -29,5 +29,4 @@
             android:value=".MainActivity" />
         </activity>
     </application>
-
 </manifest>
