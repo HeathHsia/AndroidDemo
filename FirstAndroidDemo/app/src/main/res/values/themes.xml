@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题style-->
+    <style name="CustomActivityTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/CustomActivityThemeLight</item>
+        <item name="android:actionBarTabTextStyle" >@style/CustomTabText</item>
+        <!--Support库兼容 去掉android：-->
+        <item name="actionBarStyle">@style/CustomActivityThemeLight</item>
+        <item name="actionBarTabTextStyle" >@style/CustomTabText</item>
+    </style>
+    <!--Bar style-->
+    <style name="CustomActivityThemeLight"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse" >
+        <item name="android:background">@drawable/ic_launcher_background</item>
+        <item name="background">@drawable/ic_launcher_background</item>
+        <!--Support库兼容 去掉android：-->
+        <item name="android:titleTextStyle" >@style/CustomThemeTitle</item>
+        <item name="titleTextStyle" >@style/CustomThemeTitle</item>
+    </style>
+    <!--标题文本 style -->
+    <style name="CustomThemeTitle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" >
+        <item name="android:textColor" >@color/colorAccent</item>
+    </style>
+    <!--tab 文本 样式-->
+    <style name="CustomTabText"
+        parent="@style/Widget.AppCompat.ActionBar.TabText" >
+        <item name="android:textColor" >@color/action_bar_text_color</item>
+    </style>
+    <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat" >
+        <item name="actionBarTabStyle" >@style/MyActionBarTabs</item>
+        <item name="android:actionBarTabStyle" >@style/MyActionBarTabs</item>
+    </style>
+    <style name="MyActionBarTabs"
+        parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background" >@drawable/actionbar_tab_indicator</item>
+        <item name="background" >@drawable/actionbar_tab_indicator</item>
+    </style>
+</resources>
+

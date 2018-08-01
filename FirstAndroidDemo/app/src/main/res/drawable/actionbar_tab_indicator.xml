@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ <!--按钮没有按下-->
+    <!--按钮没有焦点-->
+    <item android:state_focused="false"
+        android:state_selected="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/ic_launcher_background">
+    </item>
+    <item android:state_focused="false"
+        android:state_selected="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/ic_launcher_background">
+    </item>
+
+    <!--按钮有焦点-->
+    <item android:state_focused="true"
+        android:state_selected="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/ic_launcher_background" >
+    </item>
+    <item android:state_focused="true"
+        android:state_selected="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/ic_launcher_background">
+    </item>
+<!--按钮按下的-->
+    <!--没有焦点-->
+    <item android:state_focused="false"
+        android:state_selected="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_launcher_background" >
+    </item>
+    <item android:state_focused="false"
+        android:state_selected="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_launcher_background" >
+    </item>
+    <!--按钮有焦点-->
+    <item android:state_focused="true"
+        android:state_selected="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_launcher_background" >
+    </item>
+    <item android:state_focused="true"
+        android:state_selected="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_launcher_background" >
+    </item>
+</selector>

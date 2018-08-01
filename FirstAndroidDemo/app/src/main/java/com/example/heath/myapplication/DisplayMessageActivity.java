@@ -15,6 +15,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Intent intent = getIntent();
         String message =  intent.getStringExtra(EXTRA_MESSAGE);
         TextView textView = new TextView(this);
