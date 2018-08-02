@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Preference</string>
+    <string name="right_text_title">This is a maintext</string>
+    <string name="button_title">button</string>
+    <string name="main_activity_key">mainActivityPreferenceKey</string>
+</resources>
