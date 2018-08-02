@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="preference.heath.com.preference">
-
-    <!-- 对于Interal app内部读写权限默认是有的 -->
-    <!-- 获取External外部 读写的权限 -->
-    <!-- Write权限已经涵盖了Read权限 -->
-    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    package="listview.heath.com.listview">
 
     <application
         android:allowBackup="true"
@@ -16,15 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            // 在activity标签下的intent-filter标签约束着intetent过滤器
             <intent-filter>
-                <!--作为主Activity标签-->
                 <action android:name="android.intent.action.MAIN" />
-                <!--作为LAUNCHER-->
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity">
-        </activity>
     </application>
+
 </manifest>
