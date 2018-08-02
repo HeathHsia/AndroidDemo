@@ -1,14 +1,17 @@
 package listview.heath.com.listview;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String[] strs = new String[] {"first", "second", "third", "forth", "fifth"
     };
     private ListView listView;
+    private final static OkHttpClient client = new OkHttpClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         Log.e("item Data ArrList", dataList.toString());
         // 创建SimpleAdapter
+
         SimpleAdapter adapter = new SimpleAdapter(this, dataList, R.layout.item, new String[]{"itemImg", "itemTitle", "itemText"}, new int[] {R.id.itemImg, R.id.itemTitle, R.id.itemText});
         listView.setAdapter(adapter);
 
@@ -56,6 +61,41 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        setTitle("你点击了" + i + "行");
+        setTitle("你点击了" + i + " 行");
+        requestDataList();
+    }
+
+    /**
+     * request DataList
+     */
+    public void requestDataList () {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    excute();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+    public void  excute () throws Exception {
+        Request request = new Request.Builder().url("https://publicobject.com/helloworld.txt").build();
+        try {
+            Response response = client.newCall(request).execute();
+            if (response.isSuccessful()) {
+                Log.e("请求成功", "Success");
+//                Log.e("Response Body is ", response.body().toString());
+            }else {
+                Log.e("请求失败", "Fail");
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
+
+
