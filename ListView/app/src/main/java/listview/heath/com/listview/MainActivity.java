@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
      */
     public void requestDataList () {
 
-        // 开启线程 做网络请求
+        // 开启线程 做网络请求 由于okHTTPs并不支持异步子线程执行 GET请求，POST请求
         new Thread(new Runnable() {
             @Override
             public void run() {
