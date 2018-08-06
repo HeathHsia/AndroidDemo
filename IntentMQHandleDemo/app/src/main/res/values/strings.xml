@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntentMQHandleDemo</string>
+    <string name="button_title">load</string>
+    <string name="new_button_title">new_title</string>
+</resources>
