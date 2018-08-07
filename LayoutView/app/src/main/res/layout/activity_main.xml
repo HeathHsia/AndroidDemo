@@ -35,7 +35,7 @@
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
             >
-            <Button android:layout_width="0dp"
+            <layoutview.heath.com.layoutview.CustomButton android:layout_width="0dp"
                 android:id="@+id/one"
                 android:tag="1"
                 android:layout_weight="1"
