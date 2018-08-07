@@ -31,3 +31,6 @@
 ### Developing Android Apps
 
 [https://www.udacity.com/course/ud853](https://www.udacity.com/course/ud853)
+
+### 常用系统View总结
+[https://www.2cto.com/kf/201608/540648.html](https://www.2cto.com/kf/201608/540648.html)
