@@ -35,6 +35,10 @@
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
             >
+            <layoutview.heath.com.layoutview.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"/>
             <layoutview.heath.com.layoutview.CustomButton android:layout_width="0dp"
                 android:id="@+id/one"
                 android:tag="1"

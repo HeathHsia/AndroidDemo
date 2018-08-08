@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/all_car_types"
+            android:tag="@string/all_car_types"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorYellow"
+            android:onClick="clickItem"
+            android:layout_margin="5dp"
+            android:text="@string/all_car_types"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:tag="@string/get_car"
+            android:id="@+id/get_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="clickItem"
+            android:layout_margin="5dp"
+            android:text="@string/get_car"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/gif_sale"
+            android:tag="@string/gift_sale"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="clickItem"
+            android:layout_margin="5dp"
+            android:text="@string/gift_sale"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:tag="@string/ar_see_car"
+            android:id="@+id/ar_see_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPink"
+            android:onClick="clickItem"
+            android:layout_margin="5dp"
+            android:text="@string/ar_see_car"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:tag="@string/out_list"
+            android:id="@+id/out_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorGreen"
+            android:onClick="clickItem"
+            android:layout_margin="5dp"
+            android:text="@string/out_list"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

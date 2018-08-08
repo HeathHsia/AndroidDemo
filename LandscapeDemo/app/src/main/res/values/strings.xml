@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LandscapeDemo</string>
+    <string name="all_car_types">全部车型</string>
+    <string name="get_car">智能提车</string>
+    <string name="gift_sale">礼品优惠</string>
+    <string name="ar_see_car">AR看车</string>
+    <string name="out_list">打印单据</string>
+</resources>

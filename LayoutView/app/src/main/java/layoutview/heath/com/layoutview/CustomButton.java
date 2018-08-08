@@ -43,7 +43,6 @@ public class CustomButton extends AppCompatButton {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
     }
 
     /**
@@ -61,10 +60,12 @@ public class CustomButton extends AppCompatButton {
 
     /**
      * View 绘制过程
-     * @param canvas
+     * @param canvas 该view的画布
      */
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
     }
+
+
 }
