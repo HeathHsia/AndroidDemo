@@ -35,7 +35,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case "礼品优惠" :
             {
-
+                // 礼品优惠列表
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
             }
                 break;
             case "AR看车" :

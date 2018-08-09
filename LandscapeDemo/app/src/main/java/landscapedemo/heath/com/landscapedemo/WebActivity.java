@@ -29,6 +29,8 @@ public class WebActivity extends BaseActivity {
                 return super.shouldOverrideUrlLoading(view, request);
             }
         });
+
         webView.loadUrl("https://www.baidu.com");
+
     }
 }
