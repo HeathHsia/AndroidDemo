@@ -23,12 +23,12 @@ public class WebActivity extends BaseActivity {
 
         // 如果不设置WebViewClient 就会跳转到浏览器
         webView.setWebViewClient(new WebViewClient() {
+            // 列表项目
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 return super.shouldOverrideUrlLoading(view, request);
             }
         });
-
         webView.loadUrl("https://www.baidu.com");
     }
 }

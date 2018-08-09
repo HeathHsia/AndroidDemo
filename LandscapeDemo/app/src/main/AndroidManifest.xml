@@ -16,10 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WebActivity">
-
         </activity>
         <activity android:name=".VideoActivity">
-
         </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
